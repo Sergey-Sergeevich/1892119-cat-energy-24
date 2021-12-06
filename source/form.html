@@ -37,114 +37,114 @@
     </header>
     <main class="main-form">
       <section class="form-program">
-        <div class="form">
+        <div class="form-program__form">
           <header class="inner-header">
             <h1 class="inner-title">Подбор программы</h1>
             <p class="inner-text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
           </header>
           <h2 class="visually-hidden">Фильтры подбора программы</h2>
-          <div class="form-inner">
-            <form class="program-filter" action="https:/echo.htmlacademy.ru/" method="get">
-              <fieldset class="parameters">
-                <div class="wrapper-inputs">
-                  <div class="name-wrapper">
-                    <label class="form-label" for="name-cat">Имя:*</label>
-                    <input class="form-filter-input form-filter-name" type="text" id="name-cat" value="Барсик" name="name-cat">
+          <div class="form form-inner">
+            <form class="form__program-filter" action="https:/echo.htmlacademy.ru/" method="get">
+              <fieldset class="form parameters">
+                <div class="parameters__wrapper-inputs">
+                  <div class="parameters__name-wrapper">
+                    <label class="parameters__form-label" for="name-cat">Имя:*</label>
+                    <input class="parameters__form-filter-input" type="text" id="name-cat" value="Барсик" name="name-cat">
                   </div>
-                  <div class="name-wrapper">
-                    <label class="form-label" for="weight-cat">Вес (кг):*</label>
-                    <input class="form-filter-input form-filter-weight" type="number" id="weight-cat" value="7" name="weight-cat">
+                  <div class="parameters__name-wrapper">
+                    <label class="parameters__form-label" for="weight-cat">Вес (кг):*</label>
+                    <input class="parameters__form-filter-input" type="number" id="weight-cat" value="7" name="weight-cat">
                   </div>
-                  <div class="name-wrapper">
-                    <label class="form-label" for="age-cat">Возраст (лет):</label>
-                    <input class="form-filter-input form-filter-age" type="number" id="age-cat" value="7" name="age-cat">
+                  <div class="parameters__name-wrapper">
+                    <label class="parameters__form-label" for="age-cat">Возраст (лет):</label>
+                    <input class="parameters__form-filter-input" type="number" id="age-cat" value="7" name="age-cat">
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="parameters">
-                <ul class="form-filter-list">
-                  <li class="form-filter-item">
-                    <label class="control">
+              <fieldset class="form checkbox">
+                <ul class="checkbox__form-filter-list">
+                  <li class="checkbox__form-filter-item">
+                    <label class="checkbox__control">
                       <input class="visually-hidden control-input" type="radio" name="parameters" value="skinny" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Похудение</span>
+                      <span class="checkbox__control-mark"></span>
+                      <span class="checkbox__control-label">Похудение</span>
                     </label>
                   </li>
-                  <li class="form-filter-item">
-                    <label class="control">
+                  <li class="checkbox__form-filter-item">
+                    <label class="checkbox__control">
                       <input class="visually-hidden control-input" type="radio" name="parameters" value="fat">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Набор массы</span>
+                      <span class="checkbox__control-mark"></span>
+                      <span class="checkbox__control-label">Набор массы</span>
                     </label>
                   </li>
-                  <li class="form-filter-item">
-                    <label class="control">
+                  <li class="checkbox__form-filter-item">
+                    <label class="checkbox__control">
                       <input class="visually-hidden control-input" type="radio" name="parameters" value="advice">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                      <span class="checkbox__control-mark"></span>
+                      <span class="checkbox__control-label">Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="parameters">
-                <legend class="master">Контактные данные (владелец кота)</legend>
-                <div class="master-wrapper">
-                  <label class="master-mail" for="mailing">E-mail:*</label>
-                  <input class="mail-input" type="email" id="mailing" name="Ваш e-mail" placeholder="kuklachev@gmail.com">
-                  <svg class="mail-icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <fieldset class="form inputs">
+                <legend class="inputs__master">Контактные данные (владелец кота)</legend>
+                <div class="inputs__master-wrapper">
+                  <label class="inputs__master-mail" for="mailing">E-mail:*</label>
+                  <input class="inputs__mail-input" type="email" id="mailing" name="Ваш e-mail" placeholder="kuklachev@gmail.com">
+                  <svg class="inputs__mail-icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#222" stroke-width="1.3" d="M.65 5.848v8M17.65 5.848v8M0 13.198h18M0 1.198h18M17.35 3.03 9 9.524.65 3.03V1.498h16.7V3.03Z"/>
                   </svg>
                 </div>
-                <div class="master-wrapper">
-                  <label class="master-mail" for="phone">Телефон:*</label>
-                  <input class="mail-input" type="number" id="phone" name="Ваш телефон" placeholder="8 (960) 900-60-90">
+                <div class="inputs__master-wrapper">
+                  <label class="inputs__master-mail" for="phone">Телефон:*</label>
+                  <input class="inputs__mail-input" type="number" id="phone" name="Ваш телефон" placeholder="8 (960) 900-60-90">
                   <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000">
                     <path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs><clipPath id="a">
                     <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></clipPath></defs>
                   </svg>
                 </div>
               </fieldset>
-              <fieldset class="parameters">
-                <legend class="comments-title">Комментарий</legend>
-                <div class="comments">
-                  <input class="comments-text" type="text" id="comments" name="comments" placeholder="Расскажите обо все повадках кота">
+              <fieldset class="form com">
+                <legend class="com__comments-title">Комментарий</legend>
+                <div class="com__comments">
+                  <input class="com__comments-text" type="text" id="comments" name="comments" placeholder="Расскажите обо все повадках кота">
                 </div>
               </fieldset>
-              <fieldset class="parameters">
-                <legend class="extra">Дополнительно</legend>
-                  <ul class="extra-list">
-                    <li class="extra-item">
-                      <label class="extra-control">
+              <fieldset class="form sidewalk">
+                <legend class="sidewalk__extra">Дополнительно</legend>
+                  <ul class="sidewalk__extra-list">
+                    <li class="sidewalk__extra-item">
+                      <label class="sidewalk__extra-control">
                         <input class="visually-hidden extra-input" type="checkbox" name="Сахарозаменитель" checked>
-                        <span class="extra-mark"></span>
-                        <span class="extra-label">Сахарозаменитель</span>
+                        <span class="sidewalk__extra-mark"></span>
+                        <span class="sidewalk__extra-label">Сахарозаменитель</span>
                       </label>
                     </li>
-                    <li class="extra-item">
-                      <label class="extra-control">
+                    <li class="sidewalk__extra-item">
+                      <label class="sidewalk__extra-control">
                         <input class="visually-hidden extra-input" type="checkbox" name="Питьевая вода">
-                        <span class="extra-mark"></span>
-                        <span class="extra-label">Питьевая вода</span>
+                        <span class="sidewalk__extra-mark"></span>
+                        <span class="sidewalk__extra-label">Питьевая вода</span>
                       </label>
                     </li>
-                    <li class="extra-item">
-                      <label class="extra-control">
+                    <li class="sidewalk__extra-item">
+                      <label class="sidewalk__extra-control">
                         <input class="visually-hidden extra-input" type="checkbox" name="Молоко">
-                        <span class="extra-mark"></span>
-                        <span class="extra-label">Молоко</span>
+                        <span class="sidewalk__extra-mark"></span>
+                        <span class="sidewalk__extra-label">Молоко</span>
                       </label>
                     </li>
-                    <li class="extra-item">
-                      <label class="extra-control">
+                    <li class="sidewalk__extra-item">
+                      <label class="sidewalk__extra-control">
                         <input class="visually-hidden extra-input" type="checkbox" name="Витамины">
-                        <span class="extra-mark"></span>
-                        <span class="extra-label">Витамины</span>
+                        <span class="sidewalk__extra-mark"></span>
+                        <span class="sidewalk__extra-label">Витамины</span>
                       </label>
                     </li>
                  </ul>
               </fieldset>
-              <div class="parametrs-button">
-                <button class="button-form button" type="submit">Отправить заявку</button>
+              <div class="form__parametrs-button">
+                <button class="form__button" type="submit">Отправить заявку</button>
               </div>
             </form>
             <span class="additionally">* — Обязательные поля</span>
@@ -152,28 +152,30 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="page__contacts">
+        <div class="contacts__page">
           <h2 class="visually-hidden">Контакная информация</h2>
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__text">
             ул. Большая<br> Конюшенная 19/8<br> Санкт-Петербург
           </p>
         </div>
-        <div class="contacts__map">
-          <img class="map" src="img/map.jpg" width="320" height="362" alt="Карта города">
-          <img class="map-logo" src="img/map-logo.jpg" width="57" height="53" alt="Курсор">
+        <div class="contacts__map map">
+          <img class="map__image" src="img/map.jpg" width="320" height="362" alt="Карта города">
+          <img class="map__logo" src="img/map-logo.jpg" width="57" height="53" alt="Курсор">
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <a class="social__title">
-            <svg class="social-icon" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#111">
+        <div class="page-footer__social logo">
+          <a class="logo__title">
+            <svg class="logo-icon" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#111">
               <path d="M1.603 22.051A9.498 9.498 0 0 1 0 16.308V7.795a9.63 9.63 0 0 1 1.502-5.846C2.604.615 4.307 0 6.811 0s4.106.615 5.108 1.744a7.487 7.487 0 0 1 1.502 5.025v2.052H8.513V6.46a5.157 5.157 0 0 0-.3-2.05 1.463 1.463 0 0 0-.579-.63 1.415 1.415 0 0 0-.823-.191c-.701 0-1.202.205-1.403.718a6.774 6.774 0 0 0-.3 2.256v10.974a4.334 4.334 0 0 0 .4 2.154c.2.513.702.718 1.403.718.7 0 1.102-.205 1.302-.718.228-.693.33-1.423.3-2.154v-2.461h4.908v2.051a7.98 7.98 0 0 1-1.502 5.128c-1.002 1.231-2.705 1.847-5.108 1.847-2.404-.103-4.207-.718-5.208-2.052ZM19.33.308h5.71l4.206 23.384h-4.607l-.802-4.923h-3.305l-.801 4.923h-4.708L19.33.308Zm4.107 15.384-1.202-9.128-1.202 9.128h2.404ZM32.751 4.205h-3.405V.308h11.918v3.794H37.86v19.59h-5.108V4.205ZM50.379.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.914V.308h.1ZM61.797.308H64l6.51 15.487V.308h2.604v23.384h-2.003l-6.61-16v16h-2.704V.308ZM76.119.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.814V.308ZM87.537.308h4.607a7.873 7.873 0 0 1 5.108 1.436c1.102.923 1.602 2.564 1.602 4.717 0 2.975-.901 4.821-2.804 5.436l3.205 11.693H96.15l-3.005-10.975h-2.503V23.59h-3.205V.308h.1Zm4.407 10.05a4.302 4.302 0 0 0 2.904-.82c.601-.512.902-1.538.902-3.077a6.772 6.772 0 0 0-.3-2.256 2.583 2.583 0 0 0-1.103-1.23 4.473 4.473 0 0 0-2.203-.411h-1.402v7.692h1.202v.103ZM102.861 21.949a10.566 10.566 0 0 1-1.402-5.95V8.206c-.025-1.486.143-2.97.5-4.41a5.204 5.204 0 0 1 1.903-2.667 6.421 6.421 0 0 1 3.706-.923c2.103 0 3.606.513 4.507 1.641a7.982 7.982 0 0 1 1.402 5.128v.82h-3.004v-.717a15.503 15.503 0 0 0-.201-2.564 2.056 2.056 0 0 0-.801-1.334 3.04 3.04 0 0 0-1.903-.512 2.955 2.955 0 0 0-2.003.615 2.349 2.349 0 0 0-.801 1.641 19.734 19.734 0 0 0-.201 2.77v8.717a9.527 9.527 0 0 0 .601 3.898c.401.82 1.202 1.128 2.404 1.128.475.06.956-.024 1.384-.243a2.45 2.45 0 0 0 1.02-.988 9.635 9.635 0 0 0 .701-4.102V14.46h-2.905v-2.359h5.809v11.59h-2.003l-.3-2.666a4.18 4.18 0 0 1-1.554 2.21 4.016 4.016 0 0 1-2.553.764 4.907 4.907 0 0 1-2.406-.47 5.037 5.037 0 0 1-1.9-1.581ZM119.987 15.487 115.08.41h3.004l3.506 11.282L124.995.41H128l-4.908 15.077v8.205h-3.004v-8.205h-.101Z"/></g><defs><clipPath id="a">
               <path fill="#fff" d="M0 0h128v24H0z"/></clipPath></defs>
             </svg>
           </a>
+        </div>
+        <div class="page-footer social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -187,7 +189,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link-image" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34" fill="#666" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/>
