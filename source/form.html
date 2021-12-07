@@ -35,111 +35,110 @@
         </div>
       </nav>
     </header>
-
     <main class="main-form">
       <section class="form-program">
         <div class="form-program__form">
           <header class="inner-header">
-            <h1 class="inner-title">Подбор программы</h1>
+            <h1 class="inner-title heading">Подбор программы</h1>
             <p class="inner-text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
           </header>
           <h2 class="visually-hidden">Фильтры подбора программы</h2>
           <div class="form form-inner">
-            <form class="form__program-filter" action="https:/echo.htmlacademy.ru/" method="get">
-              <fieldset class="form parameters">
-                <div class="parameters__wrapper-inputs">
-                  <div class="parameters__name-wrapper">
-                    <label class="parameters__form-label" for="name-cat">Имя:*</label>
-                    <input class="parameters__form-filter-input" type="text" id="name-cat" value="Барсик" name="name-cat">
+            <form class="form__program-filter" action="//https:/echo.htmlacademy.ru" method="get">
+              <fieldset class="form__parameters">
+                <div class="form__wrapper-inputs">
+                  <div class="form__name-wrapper">
+                    <label class="form__form-label" for="name-cat">Имя:*</label>
+                    <input class="form__form-filter-input" type="text" id="name-cat" value="Барсик" name="name-cat">
                   </div>
-                  <div class="parameters__name-wrapper">
-                    <label class="parameters__form-label" for="weight-cat">Вес (кг):*</label>
-                    <input class="parameters__form-filter-input" type="number" id="weight-cat" value="7" name="weight-cat">
+                  <div class="form__name-wrapper">
+                    <label class="form__form-label" for="weight-cat">Вес (кг):*</label>
+                    <input class="form__form-filter-input" type="number" id="weight-cat" value="7" name="weight-cat">
                   </div>
-                  <div class="parameters__name-wrapper">
-                    <label class="parameters__form-label" for="age-cat">Возраст (лет):</label>
-                    <input class="parameters__form-filter-input" type="number" id="age-cat" value="7" name="age-cat">
+                  <div class="form__name-wrapper">
+                    <label class="form__form-label" for="age-cat">Возраст (лет):</label>
+                    <input class="form__form-filter-input" type="number" id="age-cat" value="7" name="age-cat">
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="form checkbox">
-                <ul class="checkbox__form-filter-list">
-                  <li class="checkbox__form-filter-item">
-                    <label class="checkbox__control">
-                      <input class="visually-hidden control-input" type="radio" name="parameters" value="skinny" checked>
-                      <span class="checkbox__control-mark"></span>
-                      <span class="checkbox__control-label">Похудение</span>
+              <fieldset class="form__checkbox">
+                <ul class="form__form-filter-list">
+                  <li class="form__form-filter-item">
+                    <label class="form__control">
+                      <input class="visually-hidden" type="radio" name="parameters" value="skinny" checked>
+                      <span class="form__control-mark"></span>
+                      <span class="form__control-label">Похудение</span>
                     </label>
                   </li>
-                  <li class="checkbox__form-filter-item">
-                    <label class="checkbox__control">
-                      <input class="visually-hidden control-input" type="radio" name="parameters" value="fat">
-                      <span class="checkbox__control-mark"></span>
-                      <span class="checkbox__control-label">Набор массы</span>
+                  <li class="form__form-filter-item">
+                    <label class="form__control">
+                      <input class="visually-hidden" type="radio" name="parameters" value="fat">
+                      <span class="form__control-mark"></span>
+                      <span class="form__control-label">Набор массы</span>
                     </label>
                   </li>
-                  <li class="checkbox__form-filter-item">
-                    <label class="checkbox__control">
-                      <input class="visually-hidden control-input" type="radio" name="parameters" value="advice">
-                      <span class="checkbox__control-mark"></span>
-                      <span class="checkbox__control-label">Не знаю (Нужен ваш совет)</span>
+                  <li class="form__form-filter-item">
+                    <label class="form__control">
+                      <input class="visually-hidden" type="radio" name="parameters" value="advice">
+                      <span class="form__control-mark"></span>
+                      <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form inputs">
-                <legend class="inputs__master">Контактные данные (владелец кота)</legend>
-                <div class="inputs__master-wrapper">
-                  <label class="inputs__master-mail" for="mailing">E-mail:*</label>
-                  <input class="inputs__mail-input" type="email" id="mailing" name="Ваш e-mail" placeholder="kuklachev@gmail.com">
-                  <svg class="inputs__mail-icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <fieldset class="form__inputs">
+                <legend class="form__master">Контактные данные (владелец кота)</legend>
+                <div class="form__master-wrapper">
+                  <label class="form__master-mail" for="mailing">E-mail:*</label>
+                  <input class="form__mail-input" type="email" id="mailing" name="Ваш e-mail" placeholder="kuklachev@gmail.com">
+                  <svg class="form__mail-icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#222" stroke-width="1.3" d="M.65 5.848v8M17.65 5.848v8M0 13.198h18M0 1.198h18M17.35 3.03 9 9.524.65 3.03V1.498h16.7V3.03Z"/>
                   </svg>
                 </div>
-                <div class="inputs__master-wrapper">
-                  <label class="inputs__master-mail" for="phone">Телефон:*</label>
-                  <input class="inputs__mail-input" type="number" id="phone" name="Ваш телефон" placeholder="8 (960) 900-60-90">
-                  <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000">
-                    <path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs><clipPath id="a">
-                    <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></clipPath></defs>
+                <div class="form__master-wrapper">
+                  <label class="form__master-mail" for="phone">Телефон:*</label>
+                  <input class="form__mail-input" type="tel" id="phone" name="Ваш телефон" placeholder="8 (960) 900-60-90">
+                  <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000">
+                    <path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs>
+                    <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></defs>
                   </svg>
                 </div>
               </fieldset>
-              <fieldset class="form com">
-                <legend class="com__comments-title">Комментарий</legend>
-                <div class="com__comments">
-                  <input class="com__comments-text" type="text" id="comments" name="comments" placeholder="Расскажите обо все повадках кота">
+              <fieldset class="form__com">
+                <legend class="form__comments-title">Комментарий</legend>
+                <div class="form__comments">
+                  <textarea class="form__comments-text">Расскажите обо всех повадках кота</textarea>
                 </div>
               </fieldset>
-              <fieldset class="form sidewalk">
-                <legend class="sidewalk__extra">Дополнительно</legend>
-                  <ul class="sidewalk__extra-list">
-                    <li class="sidewalk__extra-item">
-                      <label class="sidewalk__extra-control">
-                        <input class="visually-hidden extra-input" type="checkbox" name="Сахарозаменитель" checked>
-                        <span class="sidewalk__extra-mark"></span>
-                        <span class="sidewalk__extra-label">Сахарозаменитель</span>
+              <fieldset class="form__sidewalk">
+                <legend class="form__extra">Дополнительно</legend>
+                  <ul class="form__extra-list">
+                    <li class="form__extra-item">
+                      <label class="form__extra-control">
+                        <input class="visually-hidden" type="checkbox" name="Сахарозаменитель" checked>
+                        <span class="form__extra-mark"></span>
+                        <span class="form__extra-label">Сахарозаменитель</span>
                       </label>
                     </li>
-                    <li class="sidewalk__extra-item">
-                      <label class="sidewalk__extra-control">
-                        <input class="visually-hidden extra-input" type="checkbox" name="Питьевая вода">
-                        <span class="sidewalk__extra-mark"></span>
-                        <span class="sidewalk__extra-label">Питьевая вода</span>
+                    <li class="form__extra-item">
+                      <label class="form__extra-control">
+                        <input class="visually-hidden" type="checkbox" name="Питьевая вода">
+                        <span class="form__extra-mark"></span>
+                        <span class="form__extra-label">Питьевая вода</span>
                       </label>
                     </li>
-                    <li class="sidewalk__extra-item">
-                      <label class="sidewalk__extra-control">
-                        <input class="visually-hidden extra-input" type="checkbox" name="Молоко">
-                        <span class="sidewalk__extra-mark"></span>
-                        <span class="sidewalk__extra-label">Молоко</span>
+                    <li class="form__extra-item">
+                      <label class="form__extra-control">
+                        <input class="visually-hidden" type="checkbox" name="Молоко">
+                        <span class="form__extra-mark"></span>
+                        <span class="form__extra-label">Молоко</span>
                       </label>
                     </li>
-                    <li class="sidewalk__extra-item">
-                      <label class="sidewalk__extra-control">
-                        <input class="visually-hidden extra-input" type="checkbox" name="Витамины">
-                        <span class="sidewalk__extra-mark"></span>
-                        <span class="sidewalk__extra-label">Витамины</span>
+                    <li class="form__extra-item">
+                      <label class="form__extra-control">
+                        <input class="visually-hidden" type="checkbox" name="Витамины">
+                        <span class="form__extra-mark"></span>
+                        <span class="form__extra-label">Витамины</span>
                       </label>
                     </li>
                  </ul>
@@ -147,8 +146,8 @@
               <div class="form__parametrs-button">
                 <button class="form__button" type="submit">Отправить заявку</button>
               </div>
+              <span class="form__additionally">* — Обязательные поля</span>
             </form>
-            <span class="additionally">* — Обязательные поля</span>
           </div>
         </div>
       </section>
