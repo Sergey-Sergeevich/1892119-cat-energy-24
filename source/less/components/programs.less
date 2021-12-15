@@ -1,0 +1,105 @@
+.programs {
+  padding: 20px 20px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.programs__item {
+  list-style-type: none;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programs__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__title {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.big {
+  margin-top: 9px;
+  margin-left: 35px;
+}
+
+.small {
+  margin-top: 9px;
+  margin-left: 13px;
+}
+
+.small::before {
+  position: absolute;
+  display: block;
+  background-image: url("../../img/cat_small.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: -11px;
+  left: -10px;
+}
+
+.big::before {
+  position: absolute;
+  display: block;
+  background-image: url("../../img/cat_big.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 67px;
+  height: 50px;
+  top: -5px;
+  left: -44px;
+  margin-right: 10px;
+}
+
+.programs__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-align: left;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 22px;
+  margin: 0;
+  margin-bottom: 19px;
+  margin-top: 29px;
+}
+
+.programs__button {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  height: 16px;
+}
+
+.programs__button-text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-right: 15px;
+}
