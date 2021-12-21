@@ -25,10 +25,26 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 24px;
+  top: 31px;
   left: 265px;
+  display: block;
+  width: 24px;
+  height: 8px;
+  border: none;
+  background-color: #ffffff;
+  border-top: 1.5px solid #000000;
+  border-bottom: 1.5px solid #000000;
 }
 
-/*.page-header__wrapper {
+.page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  border-top: 1.5px solid #000000;
+}
+
+.page-header__wrapper {
   display: none;
-}*/
+}
