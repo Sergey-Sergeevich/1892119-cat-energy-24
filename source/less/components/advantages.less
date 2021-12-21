@@ -1,7 +1,14 @@
 .advantages {
-  padding: 0 20px;
   margin: 0;
   padding-bottom: 53px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.advantages__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .advantages__title {
@@ -23,19 +30,13 @@
 }
 
 .advantages__text {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
   margin: 0;
   margin-left: 40px;
 }
 
-.healthy::before {
+.advantages__text--healthy::before {
+  .block;
   position: absolute;
-  display: block;
   background-image: url("../../img/icons/healthy.svg");
   background-repeat: no-repeat;
   content: "";
@@ -49,9 +50,9 @@
   margin-bottom: 26px;
 }
 
-.cooking::before {
+.advantages__text--cooking::before {
+  .block;
   position: absolute;
-  display: block;
   background-image: url("../../img/icons/cooking.svg");
   background-repeat: no-repeat;
   content: "";
@@ -61,9 +62,9 @@
   left: 0;
 }
 
-.cutlery::before {
+.advantages__text--cutlery::before {
+  .block;
   position: absolute;
-  display: block;
   background-image: url("../../img/icons/cutlery.svg");
   background-repeat: no-repeat;
   content: "";
@@ -73,9 +74,9 @@
   left: 0;
 }
 
-.watch::before {
+.advantages__text--watch::before {
+  .block;
   position: absolute;
-  display: block;
   background-image: url("../../img/icons/watch.svg");
   background-repeat: no-repeat;
   content: "";

@@ -1,15 +1,25 @@
 .copyright {
   padding-top: 22px;
   width: 280px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .copyright__link-image {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link {
-  height: 34px;
+.copyright__link-image:hover .copyright__icon {
+  fill: #68b738;
+}
+
+.copyright__link-image:active .copyright__icon {
+  fill: #68b738;
+  opacity: 0.3;
 }
