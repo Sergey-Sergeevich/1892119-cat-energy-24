@@ -3,31 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.jpg" width="33" height="38" alt="Логотип сайта">
-        <img class="page-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__wrap">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo.jpg" width="33" height="38" alt="Логотип сайта">
+          <img class="page-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+        </a>
+      </div>
+      <nav class="page-header__nav">
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+        <div class="page-header__wrapper">
+          <ul class="page-header__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a class="site-list__link"  href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link"  href="catalog.html">
                 Каталог Продукции
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a class="site-list__link" >
                 Подбор программы
               </a>
             </li>
@@ -39,8 +43,8 @@
       <section class="form-program">
         <div class="form-program__form">
           <header class="inner-header">
-            <h1 class="inner-title heading">Подбор программы</h1>
-            <p class="inner-text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+            <h1 class="inner-header__title">Подбор программы</h1>
+            <p class="inner-header__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
           </header>
           <h2 class="visually-hidden">Фильтры подбора программы</h2>
           <div class="form form-inner">
@@ -49,15 +53,15 @@
                 <div class="form__wrapper-inputs">
                   <div class="form__name-wrapper">
                     <label class="form__form-label" for="name-cat">Имя:*</label>
-                    <input class="form__form-filter-input" type="text" id="name-cat" value="Барсик" name="name-cat">
+                    <input class="form__form-filter-input" type="text" id="name-cat" placeholder="Барсик" name="name-cat">
                   </div>
                   <div class="form__name-wrapper">
                     <label class="form__form-label" for="weight-cat">Вес (кг):*</label>
-                    <input class="form__form-filter-input" type="number" id="weight-cat" value="7" name="weight-cat">
+                    <input class="form__form-filter-input" type="number" id="weight-cat" placeholder="7" name="weight-cat">
                   </div>
                   <div class="form__name-wrapper">
                     <label class="form__form-label" for="age-cat">Возраст (лет):</label>
-                    <input class="form__form-filter-input" type="number" id="age-cat" value="7" name="age-cat">
+                    <input class="form__form-filter-input" type="number" id="age-cat" placeholder="7" name="age-cat">
                   </div>
                 </div>
               </fieldset>
@@ -65,21 +69,21 @@
                 <ul class="form__form-filter-list">
                   <li class="form__form-filter-item">
                     <label class="form__control">
-                      <input class="visually-hidden" type="radio" name="parameters" value="skinny" checked>
+                      <input class="visually-hidden form__control-input" type="radio" name="parameters" value="skinny" checked>
                       <span class="form__control-mark"></span>
                       <span class="form__control-label">Похудение</span>
                     </label>
                   </li>
                   <li class="form__form-filter-item">
                     <label class="form__control">
-                      <input class="visually-hidden" type="radio" name="parameters" value="fat">
+                      <input class="visually-hidden form__control-input" type="radio" name="parameters" value="fat">
                       <span class="form__control-mark"></span>
                       <span class="form__control-label">Набор массы</span>
                     </label>
                   </li>
                   <li class="form__form-filter-item">
                     <label class="form__control">
-                      <input class="visually-hidden" type="radio" name="parameters" value="advice">
+                      <input class="visually-hidden form__control-input" type="radio" name="parameters" value="advice">
                       <span class="form__control-mark"></span>
                       <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
                     </label>
@@ -90,69 +94,73 @@
                 <legend class="form__master">Контактные данные (владелец кота)</legend>
                 <div class="form__master-wrapper">
                   <label class="form__master-mail" for="mailing">E-mail:*</label>
-                  <input class="form__mail-input" type="email" id="mailing" name="Ваш e-mail" placeholder="kuklachev@gmail.com">
-                  <svg class="form__mail-icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#222" stroke-width="1.3" d="M.65 5.848v8M17.65 5.848v8M0 13.198h18M0 1.198h18M17.35 3.03 9 9.524.65 3.03V1.498h16.7V3.03Z"/>
-                  </svg>
+                  <div class="form__input-wrap">
+                    <input class="form__mail-input" type="email" id="mailing" name="Ваш e-mail" placeholder="kuklachev@gmail.com">
+                    <svg class="form__mail-icon" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#222" stroke-width="1.3" d="M.65 5.848v8M17.65 5.848v8M0 13.198h18M0 1.198h18M17.35 3.03 9 9.524.65 3.03V1.498h16.7V3.03Z"/>
+                    </svg>
+                  </div>
                 </div>
                 <div class="form__master-wrapper">
                   <label class="form__master-mail" for="phone">Телефон:*</label>
-                  <input class="form__mail-input" type="tel" id="phone" name="Ваш телефон" placeholder="8 (960) 900-60-90">
-                  <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000">
-                    <path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs>
-                    <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></defs>
-                  </svg>
+                  <div class="form__input-wrap">
+                    <input class="form__mail-phone" type="tel" id="phone" name="Ваш телефон" placeholder="8 (960) 900-60-90">
+                    <svg class="form__icon-phone" width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#000">
+                      <path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z"/></g><defs>
+                      <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></defs>
+                    </svg>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="form__com">
                 <legend class="form__comments-title">Комментарий</legend>
                 <div class="form__comments">
-                  <textarea class="form__comments-text">Расскажите обо всех повадках кота</textarea>
+                  <textarea class="form__comments-text" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
               </fieldset>
               <fieldset class="form__sidewalk">
                 <legend class="form__extra">Дополнительно</legend>
-                  <ul class="form__extra-list">
-                    <li class="form__extra-item">
-                      <label class="form__extra-control">
-                        <input class="visually-hidden" type="checkbox" name="Сахарозаменитель" checked>
-                        <span class="form__extra-mark"></span>
-                        <span class="form__extra-label">Сахарозаменитель</span>
-                      </label>
-                    </li>
-                    <li class="form__extra-item">
-                      <label class="form__extra-control">
-                        <input class="visually-hidden" type="checkbox" name="Питьевая вода">
-                        <span class="form__extra-mark"></span>
-                        <span class="form__extra-label">Питьевая вода</span>
-                      </label>
-                    </li>
-                    <li class="form__extra-item">
-                      <label class="form__extra-control">
-                        <input class="visually-hidden" type="checkbox" name="Молоко">
-                        <span class="form__extra-mark"></span>
-                        <span class="form__extra-label">Молоко</span>
-                      </label>
-                    </li>
-                    <li class="form__extra-item">
-                      <label class="form__extra-control">
-                        <input class="visually-hidden" type="checkbox" name="Витамины">
-                        <span class="form__extra-mark"></span>
-                        <span class="form__extra-label">Витамины</span>
-                      </label>
-                    </li>
-                 </ul>
+                <ul class="form__extra-list">
+                  <li class="form__extra-item">
+                    <label class="form__extra-control">
+                      <input class="visually-hidden form__extra-input" type="checkbox" name="Сахарозаменитель" checked>
+                      <span class="form__extra-mark"></span>
+                      <span class="form__extra-label">Сахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="form__extra-item">
+                    <label class="form__extra-control">
+                      <input class="visually-hidden form__extra-input" type="checkbox" name="Питьевая вода">
+                      <span class="form__extra-mark"></span>
+                      <span class="form__extra-label">Питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="form__extra-item">
+                    <label class="form__extra-control">
+                      <input class="visually-hidden form__extra-input" type="checkbox" name="Молоко">
+                      <span class="form__extra-mark"></span>
+                      <span class="form__extra-label">Молоко</span>
+                    </label>
+                  </li>
+                  <li class="form__extra-item">
+                    <label class="form__extra-control">
+                      <input class="visually-hidden form__extra-input" type="checkbox" name="Витамины">
+                      <span class="form__extra-mark"></span>
+                      <span class="form__extra-label">Витамины</span>
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
               <div class="form__parametrs-button">
-                <button class="form__button" type="submit">Отправить заявку</button>
+                <button class="form__button button" type="submit">Отправить заявку</button>
               </div>
-              <span class="form__additionally">* — Обязательные поля</span>
+              <div class="form__additionally">* — Обязательные поля</div>
             </form>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__page">
+        <div class="contacts__page contacts__page--bg">
           <h2 class="visually-hidden">Контакная информация</h2>
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__text">
@@ -161,7 +169,7 @@
         </div>
         <div class="contacts__map map">
           <img class="map__image" src="img/map.jpg" width="320" height="362" alt="Карта города">
-          <img class="map__logo" src="img/map-logo.jpg" width="57" height="53" alt="Курсор">
+          <img class="map__logo" src="img/map-logo.svg" width="57" height="53" alt="Курсор">
         </div>
       </section>
     </main>
@@ -169,29 +177,44 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__social logo">
           <a class="logo__title">
-            <svg class="logo-icon" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#111">
+            <svg class="logo__icon" width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#111">
               <path d="M1.603 22.051A9.498 9.498 0 0 1 0 16.308V7.795a9.63 9.63 0 0 1 1.502-5.846C2.604.615 4.307 0 6.811 0s4.106.615 5.108 1.744a7.487 7.487 0 0 1 1.502 5.025v2.052H8.513V6.46a5.157 5.157 0 0 0-.3-2.05 1.463 1.463 0 0 0-.579-.63 1.415 1.415 0 0 0-.823-.191c-.701 0-1.202.205-1.403.718a6.774 6.774 0 0 0-.3 2.256v10.974a4.334 4.334 0 0 0 .4 2.154c.2.513.702.718 1.403.718.7 0 1.102-.205 1.302-.718.228-.693.33-1.423.3-2.154v-2.461h4.908v2.051a7.98 7.98 0 0 1-1.502 5.128c-1.002 1.231-2.705 1.847-5.108 1.847-2.404-.103-4.207-.718-5.208-2.052ZM19.33.308h5.71l4.206 23.384h-4.607l-.802-4.923h-3.305l-.801 4.923h-4.708L19.33.308Zm4.107 15.384-1.202-9.128-1.202 9.128h2.404ZM32.751 4.205h-3.405V.308h11.918v3.794H37.86v19.59h-5.108V4.205ZM50.379.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.914V.308h.1ZM61.797.308H64l6.51 15.487V.308h2.604v23.384h-2.003l-6.61-16v16h-2.704V.308ZM76.119.308h8.814v2.461h-5.71v7.692h4.608v2.36h-4.607v8.615h5.709v2.359h-8.814V.308ZM87.537.308h4.607a7.873 7.873 0 0 1 5.108 1.436c1.102.923 1.602 2.564 1.602 4.717 0 2.975-.901 4.821-2.804 5.436l3.205 11.693H96.15l-3.005-10.975h-2.503V23.59h-3.205V.308h.1Zm4.407 10.05a4.302 4.302 0 0 0 2.904-.82c.601-.512.902-1.538.902-3.077a6.772 6.772 0 0 0-.3-2.256 2.583 2.583 0 0 0-1.103-1.23 4.473 4.473 0 0 0-2.203-.411h-1.402v7.692h1.202v.103ZM102.861 21.949a10.566 10.566 0 0 1-1.402-5.95V8.206c-.025-1.486.143-2.97.5-4.41a5.204 5.204 0 0 1 1.903-2.667 6.421 6.421 0 0 1 3.706-.923c2.103 0 3.606.513 4.507 1.641a7.982 7.982 0 0 1 1.402 5.128v.82h-3.004v-.717a15.503 15.503 0 0 0-.201-2.564 2.056 2.056 0 0 0-.801-1.334 3.04 3.04 0 0 0-1.903-.512 2.955 2.955 0 0 0-2.003.615 2.349 2.349 0 0 0-.801 1.641 19.734 19.734 0 0 0-.201 2.77v8.717a9.527 9.527 0 0 0 .601 3.898c.401.82 1.202 1.128 2.404 1.128.475.06.956-.024 1.384-.243a2.45 2.45 0 0 0 1.02-.988 9.635 9.635 0 0 0 .701-4.102V14.46h-2.905v-2.359h5.809v11.59h-2.003l-.3-2.666a4.18 4.18 0 0 1-1.554 2.21 4.016 4.016 0 0 1-2.553.764 4.907 4.907 0 0 1-2.406-.47 5.037 5.037 0 0 1-1.9-1.581ZM119.987 15.487 115.08.41h3.004l3.506 11.282L124.995.41H128l-4.908 15.077v8.205h-3.004v-8.205h-.101Z"/></g><defs><clipPath id="a">
               <path fill="#fff" d="M0 0h128v24H0z"/></clipPath></defs>
             </svg>
           </a>
         </div>
-        <div class="page-footer social">
+        <div class="page-footer__icon social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__icon social__icon-vkontakte" width="23" height="16" fill="#666" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M.07 3.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 0 0 .24-.128l.067-.201.021-3.165c0-.219-.062-.365-.186-.438-.124-.074-.353-.128-.689-.165-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11.306-.793 1.182-1.189 2.626-1.189l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 0 0 .284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 0 1 .044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 0 1 .197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 0 1 .12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 0 1 .263.64c0 .28-.131.512-.394.695a1.826 1.826 0 0 1-.941.31l-.372.02h-3.327a.794.794 0 0 0-.087.008.802.802 0 0 1-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.106 1.106 0 0 0-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.124-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 0 1-.11-.53ZM13.223 8.73a1.66 1.66 0 0 1-.831-.21c-.248-.14-.372-.333-.372-.577V3.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.243v3.22c-.03.304-.175.557-.438.758a1.405 1.405 0 0 1-.875.302c-.438 0-.774-.177-1.007-.53C5.87 6.925 5.024 5.559 4.469 4.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024c1.225 2.646 2.556 4.73 3.994 6.255 1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 0 1 .57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 0 0-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 0 0 1.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 0 1-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 0 0-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 0 1-1.073.366Z"/>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <svg class="social__icon social__icon-instagram" width="16" height="16" fill="#666" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.984.063c1.334 0 2.422.015 3.266.046.719.032 1.36.157 1.922.375.541.209 1.01.51 1.406.907.396.395.698.864.906 1.406.22.562.344 1.203.375 1.922.032.843.047 1.932.047 3.265 0 1.334-.015 2.422-.047 3.266-.03.719-.156 1.36-.375 1.922a3.987 3.987 0 0 1-.906 1.406 3.987 3.987 0 0 1-1.406.906c-.563.22-1.203.344-1.922.375-.844.032-1.932.047-3.266.047a91.88 91.88 0 0 1-3.265-.047c-.719-.03-1.36-.156-1.922-.375a3.987 3.987 0 0 1-1.406-.906 3.987 3.987 0 0 1-.907-1.406C.266 12.609.141 11.969.11 11.25a91.735 91.735 0 0 1-.046-3.266c0-1.333.015-2.421.046-3.265.032-.719.157-1.36.375-1.922.209-.542.51-1.01.907-1.406A3.987 3.987 0 0 1 2.797.484C3.359.266 4 .141 4.719.11A91.733 91.733 0 0 1 7.984.063Zm0 1.03c-1.385 0-2.515.016-3.39.048-.563.02-1.084.12-1.563.296a2.853 2.853 0 0 0-1.594 1.594c-.177.48-.276 1-.296 1.563a98.83 98.83 0 0 0-.047 3.39c0 1.386.015 2.516.047 3.391.02.563.12 1.083.296 1.563.313.75.844 1.28 1.594 1.593.48.177 1 .276 1.563.297.875.031 2.005.047 3.39.047 1.386 0 2.516-.016 3.391-.047a5.015 5.015 0 0 0 1.563-.297 2.852 2.852 0 0 0 1.593-1.594c.177-.479.276-1 .297-1.562.031-.875.047-2.005.047-3.39 0-1.386-.016-2.516-.047-3.391a5.015 5.015 0 0 0-.297-1.563 2.853 2.853 0 0 0-1.594-1.594c-.479-.177-1-.276-1.562-.296a98.803 98.803 0 0 0-3.39-.047Zm0 10.063c.875 0 1.623-.31 2.243-.93.62-.62.93-1.367.93-2.242s-.31-1.622-.93-2.242a3.056 3.056 0 0 0-2.243-.93c-.875 0-1.622.31-2.242.93-.62.62-.93 1.367-.93 2.242s.31 1.623.93 2.243c.62.62 1.367.93 2.242.93Zm0-7.234c1.125 0 2.084.396 2.875 1.187.792.792 1.188 1.75 1.188 2.875s-.396 2.084-1.188 2.875c-.791.792-1.75 1.188-2.875 1.188s-2.083-.396-2.875-1.188c-.791-.791-1.187-1.75-1.187-2.875s.396-2.083 1.187-2.875c.792-.791 1.75-1.187 2.875-1.187Zm5.188-.156c0 .26-.094.481-.281.664a.949.949 0 0 1-.688.273.904.904 0 0 1-.664-.273.904.904 0 0 1-.273-.664c0-.271.09-.5.273-.688a.891.891 0 0 1 .664-.281.93.93 0 0 1 .68.289.93.93 0 0 1 .289.68Z"/>
+                  </svg>
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <svg class="social__icon social__icon-facebook" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.5 1.833h-2.75a4.63 4.63 0 0 0-3.24 1.317 4.45 4.45 0 0 0-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 0 1 .269-.635.926.926 0 0 1 .648-.263h2.75V1.833Z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link-image" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" fill="#666" xmlns="http://www.w3.org/2000/svg">
+          <a class="copyright__link-image" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__logo">HTML Academy</span>
+            <svg class="copyright__icon" width="27" height="34" fill="#666" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/>
             </svg>
           </a>

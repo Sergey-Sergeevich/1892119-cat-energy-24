@@ -1,0 +1,26 @@
+.social {
+  width: 156px;
+  padding: 20px 62px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+  height: 22px;
+}
+
+.social__list {
+  .reset;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social__link:hover .social__icon {
+  fill: #68b738;
+}
+
+
+.social__link:active .social__icon {
+  opacity: 0.3;
+}

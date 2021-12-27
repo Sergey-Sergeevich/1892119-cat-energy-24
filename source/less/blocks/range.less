@@ -1,0 +1,58 @@
+
+.range__scale {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+  padding-right: 36px;
+  display: grid;
+  grid-template-columns: 49px 13px 86px 13px 49px;
+  position: relative;
+}
+
+.range__bar {
+  grid-column: ~"3/4";
+  grid-row: ~"2/3";
+  width: 86px;
+  height: 12px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  align-self: center;
+}
+
+.range__toggle {
+  .oswald;
+  width: 49px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.range__toggle--max {
+  grid-column: ~"5/6";
+  grid-row: ~"2/3";
+  padding: 5px 0;
+}
+
+.range__toggle--min {
+  grid-column: ~"1/2";
+  grid-row: ~"2/3";
+  padding: 5px 0;
+}
+
+.range__toggle--win {
+  width: 36px;
+  height: 6px;
+  background-color: #68b738;
+  border: 3px solid #68b738;
+  border-radius: 6px;
+  position: absolute;
+  top: 27px;
+  left: 102px;
+  padding: 0;
+}
+
