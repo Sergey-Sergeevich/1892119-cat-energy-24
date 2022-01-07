@@ -78,3 +78,140 @@
   margin-bottom: 40px;
   display: block;
 }
+
+@media (min-width: @tablet-width) {
+  .aside {
+    min-width: 768px;
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+    padding: 0 30px;
+    padding-top: 43px;
+  }
+
+  .aside__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  .aside__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .aside__list {
+    justify-content: left;
+  }
+
+  .aside__item {
+    width: 162px;
+  }
+
+  .aside__advantages-heft {
+    padding: 0 30px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .aside__span {
+    padding-top: 9px;
+  }
+
+  .aside__advantages-text {
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    width: 142px;
+    margin-bottom: -7px;
+  }
+
+  .aside__item:not(:first-child) {
+    margin-left: 42px;
+  }
+
+  .aside__text {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    width: 174px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aside__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aside__cat {
+    margin-top: 85px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .aside {
+    min-width: 1440px;
+    background-color: #f2f2f2;
+    border-top: none;
+    padding: 0 110px;
+    display: flex;
+  }
+
+  .aside__title {
+    padding-top: 43px;
+    padding-bottom: 76px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  .aside__desc {
+    max-width: 436px;
+    padding-top: 70px;
+    padding-bottom: 69px;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+
+  .aside__item {
+    width: 162px;
+  }
+
+  .aside__advantages-text {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 14px;
+    width: 142px;
+    margin-bottom: -7px;
+  }
+
+  .aside__span {
+    margin-top: 60px;
+    margin-left: 63px;
+  }
+
+  .aside__text {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 75px;
+    width: 630px;
+  }
+
+  .aside__wrap {
+    max-width: 630px;
+    background-color: #f2f2f2;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .aside__cat {
+    margin-top: 26px;
+    align-self: flex-end;
+  }
+}
+

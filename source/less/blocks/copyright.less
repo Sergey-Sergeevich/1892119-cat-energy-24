@@ -1,11 +1,13 @@
 .copyright {
   padding-top: 22px;
-  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link-image {
   text-decoration: none;
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -30,4 +32,8 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
 }

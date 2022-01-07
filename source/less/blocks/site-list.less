@@ -1,6 +1,5 @@
 .site-list {
   .reset;
-  width: 320px;
   list-style-type: none;
   text-align: center;
 }
@@ -30,4 +29,41 @@
   padding-right: 20px;
   border-top: 1px solid #e6e6e6;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    margin-left: 93px;
+  }
+
+  .site-list__item {
+    .reset;
+    border: none;
+    margin-right: 35px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .site-list__link {
+    .oswald;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    margin-left: 130px;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
 }
