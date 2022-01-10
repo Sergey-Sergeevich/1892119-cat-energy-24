@@ -1,14 +1,7 @@
 .advantages {
   margin: 0;
   padding-bottom: 53px;
-  box-sizing: border-box;
   background-color: #ffffff;
-}
-
-.advantages__wrapper {
-  width: 320px;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .advantages__title {
@@ -25,8 +18,13 @@
 
 .advantages__list {
   list-style-type: none;
-  position: relative;
   margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 40px;
 }
 
 .advantages__text {
@@ -34,7 +32,7 @@
   margin-left: 40px;
 }
 
-.advantages__text--healthy::before {
+.advantages__item--healthy::before {
   .block;
   position: absolute;
   background-image: url("../img/icons/healthy.svg");
@@ -42,7 +40,7 @@
   content: "";
   width: 60px;
   height: 60px;
-  top: -3px;
+  top: 0;
   left: 0;
 }
 
@@ -50,7 +48,7 @@
   margin-bottom: 26px;
 }
 
-.advantages__text--cooking::before {
+.advantages__item--cooking::before {
   .block;
   position: absolute;
   background-image: url("../img/icons/cooking.svg");
@@ -58,11 +56,11 @@
   content: "";
   width: 60px;
   height: 60px;
-  top: 77px;
+  top: 0;
   left: 0;
 }
 
-.advantages__text--cutlery::before {
+.advantages__item--cutlery::before {
   .block;
   position: absolute;
   background-image: url("../img/icons/cutlery.svg");
@@ -70,11 +68,11 @@
   content: "";
   width: 60px;
   height: 60px;
-  top: 158px;
+  top: 0;
   left: 0;
 }
 
-.advantages__text--watch::before {
+.advantages__item--watch::before {
   .block;
   position: absolute;
   background-image: url("../img/icons/watch.svg");
@@ -82,7 +80,7 @@
   content: "";
   width: 60px;
   height: 60px;
-  bottom: -3px;
+  top: 0;
   left: 0;
 }
 
@@ -91,11 +89,6 @@
     padding-top: 45px;
     padding-bottom: 47px;
     margin-right: 109px;
-  }
-
-  .advantages__wrapper {
-    min-width: 768px;
-    padding: 0 30px;
   }
 
   .advantages__title {
@@ -115,6 +108,7 @@
     padding-top: 151px;
     padding-bottom: 57px;
     max-width: 249px;
+    padding-left: 0;
   }
 
   .advantages__text {
@@ -128,10 +122,5 @@
   .advantages {
     padding-top: 71px;
     padding-bottom: 26px;
-  }
-
-  .advantages__wrapper {
-    min-width: 1440px;
-    padding: 0 110px;
   }
 }
