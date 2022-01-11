@@ -13,13 +13,15 @@
   position: absolute;
   background-image: url("../img/index-cat.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   content: "";
   box-shadow: inset 0 0 0 155px rgba(104, 183, 56, 0.85);
   width: 280px;
   height: 302px;
-  left: 0;
+  left: 50%;
   top: 0;
   z-index: 1;
+  transform: translateX(-50%);
 }
 
 .selection__intro {
@@ -49,10 +51,8 @@
 }
 
 .selection__button {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 280px;
-  padding: 7px 44px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .selection__img {
@@ -109,13 +109,13 @@
 
 @media (min-width: @desktop-width) {
   .selection__intro {
-    margin-left: 190px;
+    margin-left: 120px;
     padding-top: 82px;
   }
 
   .selection__slogan {
     margin-top: 40px;
-    margin-left: 190px;
+    margin-left: 120px;
   }
 
   .selection__button {

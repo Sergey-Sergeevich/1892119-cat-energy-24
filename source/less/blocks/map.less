@@ -2,8 +2,22 @@
   position: relative;
 }
 
-.map__logo {
+.map__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.map::before {
   position: absolute;
-  top: 137px;
-  left: 137px;
+  background-image: url("../../img/map-logo.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 57px;
+  height: 53px;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-position: center;
 }
